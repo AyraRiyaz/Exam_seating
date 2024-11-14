@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Exam Seating Arrangement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url(https://t3.ftcdn.net/jpg/00/94/25/52/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            position: relative;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+
+        .module {
+            display: inline-block;
+            width: 45%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #4B0082;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        .module:hover {
+            transform: translateY(-5px);
+        }
+
+        .module h2 {
+            color: #4B0082;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .module p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .module a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            text-decoration: none;
+            background-color: #4B0082;
+            color: #ffffff;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .module a:hover {
+            background-color: #663399;
+        }
+
+        .store-button-container {
+            position: absolute;
+            top: 160px;
+            right: 20px;
+        }
+
+        .store-button {
+            background-color: #4B0082;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .store-button:hover {
+            background-color: #663399;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Exam Seating Detail Message Generator</h1>
+        <div class="module">
+            <p>To store contact details of students and invigilators into the database, click below:</p>
+            <a href="database.html">Click here</a>
+        </div>
+        <div class="module">
+            <h2>For Students</h2>
+            <p>Upload seating details of students.</p>
+            <a href="student.html">Upload Student Details</a>
+        </div>
+        <div class="module">
+            <h2>For Invigilators</h2>
+            <p>Upload allotted halls of invigilators.</p>
+            <a href="invigilator.html">Upload Invigilator Details</a>
+        </div>
+     </div>
+        
+   
+       
+</body>
+</html>

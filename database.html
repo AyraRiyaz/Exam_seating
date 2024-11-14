@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Exam Seating Details</title>
+    <style>
+        /* student.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4B0082; /* Purple background color */
+    color: #FFFFFF; /* White text color */
+    margin: 0;
+    padding: 0;
+    background-image: url(https://t3.ftcdn.net/jpg/00/94/25/52/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #FFFFFF; /* White heading color */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFFFFF; /* White background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #080708; /* Purple label color */
+}
+
+input[type="file"],
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0c0b0c; /* Purple border color */
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    color: #0a090a; /* Purple text color */
+}
+
+input[type="submit"] {
+    background-color: #4B0082; /* Purple background color */
+    color: #FFFFFF; /* White text color */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #663399; /* Dark purple color on hover */
+}
+
+input[type="file"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="submit"]:focus {
+    outline: none;
+    border-color: #663399; /* Dark purple color on focus */
+    box-shadow: 0 0 5px rgba(102, 51, 153, 0.5); /* Dark purple shadow on focus */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Student Information to database</h1>
+        <form action="database.php" method="post" enctype="multipart/form-data">
+            <label for="excel_file">Select Excel File:</label>
+            <input type="file" name="excel_file" id="excel_file" accept=".xlsx, .xls">
+            <br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+    <div class="container">
+        <h1>Upload Invigilator details to database</h1>
+        <form action="invigilatordatabase.php" method="post" enctype="multipart/form-data">
+            <label for="excel_file">Select Excel File:</label>
+            <input type="file" name="excel_file" id="excel_file" accept=".xlsx, .xls">
+            <br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>

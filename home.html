@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #4B0082; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://t3.ftcdn.net/jpg/00/94/25/52/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            z-index: 999; /* Ensure header is on top */
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center the navigation links */
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth transition */
+        }
+
+        header nav ul li a:hover {
+            color: #fff; /* White color on hover */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the content */
+            text-align: left; /* Align text to the left */
+            max-width: 800px; /* Limit maximum width */
+            padding: 20px; /* Add padding */
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        }
+
+        h1 {
+            color: #4B0082; /* Purple text color */
+            font-size: 3em; /* Large font size */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+            letter-spacing: 2px; /* Increased letter spacing */
+            text-transform: uppercase; /* Uppercase text */
+        }
+
+        p {
+            color: #555; /* Dark gray text color */
+            font-size: 1.2em; /* Medium font size */
+            line-height: 1.6; /* Increased line height */
+            margin-top: 20px; /* Add some space above the paragraph */
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #4B0082; /* Purple button color */
+            color: #fff; /* White button text color */
+            padding: 10px 20px; /* Add padding */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .cta-btn:hover {
+            background-color: #7B68EE; /* Dark purple on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div class="content">
+        <h1>Exam Seating Message Generator</h1>
+        <p>Unlock the art of exam logistics with us. Whether you're a student, educator, or administrator, our platform simplifies the process of generating seating messages, ensuring a seamless experience for all.</p>
+        <a href="login.html" class="cta-btn">Login Here</a>
+    </div>
+</body>
+</html>
